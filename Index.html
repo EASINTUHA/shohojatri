@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" media=" screen and (max-width:768px)" href="css/mobile.css"/>
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <!-- favicon -->
+    <link rel="icon" href="icon/icon.ico"/>
+    <!-- script tag -->
+    <script defer src="/JS/script.js"></script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Title -->
+    <title>Companion</title>
+  <!-- - favicon-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  </head>
+<body id="top">
+<!--  - #HEADER -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <div class="main-logo-dflex">
+          
+          <img class="main-logo" src="Imgs/place/WhatsApp Image 2023-04-19 at 23.11.35.jpeg" alt="">
+          <h1 class="logo">Tourest</h1>
+        </div>
+        
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#" class="navbar-link">Home</a></li>
+          <li><a href="#" class="navbar-link">About Us</a></li>
+          <li><a href="p2/Profile.html" class="navbar-link">Tour Companons</a></li>
+          <li><a href="#" class="navbar-link">Tours</a></li>
+          <li><a href="#" class="navbar-link">Destinations</a></li>
+          <li><a href="#" class="navbar-link">Blog</a></li>
+          <li><a href="#" class="navbar-link">Contact Us</a></li>
+        </ul>
+        <a href="#" class="btn btn-secondary">Booking Now</a>
+      </nav>
+    </div>
+  </header>
+<!-- main section-->
+  <main>
+    <article>
+      <!--  - #HERO -->
+
+      <section class="section hero"
+        style="background-image: url('./assets/images/hero-bg-bottom.png') url('./assets/images/hero-bg-top.png')">
+        <div class="container">
+          <img src="./assets/images/shape-1.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
+          <img src="./assets/images/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
+          <img src="./assets/images/shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
+          <div class="hero-content">
+            <p class="section-subtitle">Explore Your Travel</p>
+            <h2 class="hero-title">A Community based Trable Toursim Eco System</h2>
+            <p class="hero-text">
+              I travel not to go anywhere, but to go. I travel for travel's sake the great affair is to move.
+            </p>
+
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary">Contact Us</a>
+
+              <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="686" height="812" loading="lazy" alt="hero banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+<!---->
+<section class="section blog">
+  <div class="container">
+
+    <p class="section-subtitle">Populer compnuans</p>
+
+    <h2 class="h2 section-title amarsection">Location based Compunaans</h2>
+    <h1 class="h2 section-title amarsection">Select Location</h1>
+    <section></section>
+    <Select id="locationdown" onchange="enableLocation(this)">
+        <option value="">please Select</option>
+        <option value="1"> Chittagong</option>
+        <option value="2"> Dhaka</option>
+        <option value="3"> Khulna</option>
+        <option value="4"> Rajshahi</option>
+        <option value="5"> Sylhet</option>
+        <option value="6"> Rangpur</option>
+        <option value="7"> Mymensingh</option>
+        <option value="8"> Barishal</option>
+    </Select>
+    <!--Chittagong-->
+    <Select id="district" onchange="enabledistrict(this)" class="d-none">
+        <option value="">please Select</option>
+        <option value="101">Cumilla</option>
+        <option value="102"> Brahmanbaria</option>
+        <option value="103"> Chittagong</option>
+        <option value="104"> Bandarban</option>
+        <option value="105"> Cox’s Bazar</option>
+        <option value="106"> Feni</option>
+        <option value="107"> Khagrachhari</option>
+        <option value="108"> Lakshmipur</option>
+        <option value="109"> Noakhali</option>
+        <option value="110">Rangamati</option>
+        <option value="111">Chandpur</option>
+    </Select>
+    <!--Dhaka-->
+    <Select id="district1" onchange="enabledistrict(this)" class="d-none1">
+        <option value="">please Select</option>
+        <option value="1">Dhaka</option>
+        <option value="2">Faridpur</option>
+        <option value="3">Gazipur</option>
+        <option value="4"> Gopalganj</option>
+        <option value="5"> Jamalpur</option>
+        <option value="6"> Kishoreganj</option>
+        <option value="7"> Madaripur</option>
+        <option value="8"> Manikganj</option>
+        <option value="9"> Munshiganj</option>
+        <option value="10"> Narayanganj</option>
+        <option value="11"> Narsingdi</option>
+        <option value="12">  Netrakona</option>
+        <option value="13">  Mymensingh</option>
+    </Select>
+    <!--Khulna-->
+    <Select id="district2" onchange="enabledistrict(this)" class="d-none2">
+        <option value="">please Select</option>
+        <option value="1">Bagerhat</option>
+        <option value="2">Chuadanga</option>
+        <option value="3"> Jessore</option>
+        <option value="4"> Jhenaidah</option>
+        <option value="5"> Khulna</option>
+        <option value="6"> Kushtia</option>
+        <option value="7"> Magura</option>
+        <option value="8"> Meherpur</option>
+        <option value="9"> Narail</option>
+        <option value="10"> Satkhira</option>
+    </Select>
+    <!--Rajshahi-->
+    <Select id="district3" onchange="enabledistrict(this)" class="d-none3">
+        <option value="">please Select</option>
+        <option value="1">Bogra</option>
+        <option value="2">Chapinawabganj</option>
+        <option value="3"> Chapinawabganj</option>
+        <option value="4"> Naogaon</option>
+        <option value="5"> Pabna</option>
+        <option value="6"> Rajshahi</option>
+        <option value="7"> Sirajganj</option>
+    </Select>
+    <!--Sylhet-->
+    <Select id="district4" onchange="enabledistrict(this)" class="d-none4">
+        <option value="">please Select</option>
+        <option value="1">Habiganj</option>
+        <option value="2">Moulvibazar</option>
+        <option value="3"> Sunamganj</option>
+        <option value="4"> Sylhet</option>
+    </Select>
+    <!--Rangpur-->
+    <Select id="district5" onchange="enabledistrict(this)" class="d-none5">
+        <option value="">please Select</option>
+        <option value="1">Dinajpur</option>
+        <option value="2">Kurigram</option>
+        <option value="3"> Gaibandha</option>
+        <option value="4"> Lalmonirhat</option>
+        <option value="5"> Nilphamari</option>
+        <option value="6">Panchagarh</option>
+        <option value="7"> Rangpur</option>
+        <option value="8"> Thakurgaon</option>
+    </Select>
+    <!--Mymensingh-->
+    <Select id="district6" onchange="enabledistrict(this)" class="d-none6">
+        <option value="">please Select</option>
+        <option value="1">Mymensingh</option>
+        <option value="2">Jamalpur</option>
+        <option value="3"> Netrokona</option>
+        <option value="4"> Sherpur</option>
+    </Select>
+    <!--Barishal-->
+    <Select id="district7" onchange="enabledistrict(this)" class="d-none7">
+        <option value="">please Select</option>
+        <option value="1">Barisal</option>
+        <option value="2">Barguna</option>
+        <option value="3"> Bhola</option>
+        <option value="4"> Jhalokati</option>
+        <option value="5"> Patuakhali</option>
+        <option value="6"> Pirojpur</option>
+
+    </Select>
+    <Select id="upzilla" onchange="enabledistrict(this)" class="d-none8">
+        <option value="">please Select</option>
+        <option value="1"> Cumilla Sadar South</option>
+        <option value="2"> Comilla Adarsa Sadar</option>
+        <option value="3"> Barura</option>
+        <option value="4"> Chandina</option>
+        <option value="5"> Chauddagram</option>
+        <option value="6"> Daudkandi</option>
+        <option value="7"> Brahmanpara</option>
+        <option value="8"> Homna</option>
+        <option value="9"> Monohorgonj</option>
+        <option value="10"> Laksam</option>
+        <option value="11"> Debidwar</option>
+        <option value="12"> Meghna</option>
+        <option value="13"> Muradnagar</option>
+        <option value="14"> Nangalkot</option>
+        <option value="15"> Burichong</option>
+        <option value="16"> Titas</option>
+    </Select>
+    <ul class="blog-list blog-list1">
+
+      <li>
+        <div class="blog-card">
+
+          <figure class="card-banner">
+
+            <a href="#">
+              <img src="Imgs/place/Bandarban (1).png" width="740" height="518" loading="lazy"
+                alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+            </a>
+
+              <img class="location-loc" src="Imgs/place/Bagerhat.png" alt="">
+
+
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-wrapper">
+
+              <div class="author-wrapper">
+                <div class="hotel-cards location-cart">
+                  <div>
+                    <h5>name 1</h5>
+                  <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> place</h6>
+                  </div>
+                  <div class="ratings rati"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <div class="blog-card">
+          <figure class="card-banner">
+            <a href="#">
+              <img src="Imgs/place/Kuakata (1).png" width="740" height="518" loading="lazy"
+                alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+            </a>
+            <img class="location-loc" src="Imgs/place/Bagerhat.png" alt="">
+
+          </figure>
+
+          <div class="card-content cart-size">
+
+            <div class="card-wrapper">
+
+              <div class="author-wrapper">
+                <div class="hotel-cards location-cart">
+                  <div>
+                    <h5>name 1</h5>
+                  <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> place</h6>
+                  </div>
+                  <div class="ratings rati"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+
+          <figure class="card-banner">
+
+            <a href="#">
+              <img src="Imgs/place/sentmartin (1).png" width="740" height="518" loading="lazy"
+                alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+            </a>
+
+            <img class="location-loc" src="Imgs/place/Bagerhat.png" alt="">
+
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-wrapper">
+
+              <div class="author-wrapper">
+                <div class="hotel-cards location-cart">
+                  <div>
+                    <h5>name 1</h5>
+                  <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> place</h6>
+                  </div>
+                  <div class="ratings rati"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+<section class="section popular">
+  <div class="container">
+
+    <p class="section-subtitle">Featured Tours</p>
+
+    <h2 class="h2 section-title">Most Popular Tours</h2>
+
+    <ul class="popular-list">
+
+      <li>
+        <div class="popular-card">
+
+          <figure class="card-banner">
+            <a href="#">
+              <img src="Imgs/place/Khagrachari and Sajek Valley (1).png" width="740" height="518" loading="lazy"
+                alt="Kuala Lumpur, Malaysia" class="img-cover">
+            </a>
+
+            <span class="card-badge">
+              <ion-icon name="time-outline"></ion-icon>
+
+              <time datetime="P12D">5 Days</time>
+            </span>
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-wrapper">
+              <div class="card-price">From 5000 Tk</div>
+
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <data value="2">(20)</data>
+              </div>
+            </div>
+
+            <h3 class="card-title">
+              <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+            </h3>
+
+            <address class="card-location">Khagrachari and Sajek Valley,Chittagong</address>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="popular-card">
+
+          <figure class="card-banner">
+            <a href="#">
+              <img src="Imgs/place/coxs.png" width="740" height="518" loading="lazy"
+                alt="Kuala Lumpur, Malaysia" class="img-cover">
+            </a>
+
+            <span class="card-badge">
+              <ion-icon name="time-outline"></ion-icon>
+
+              <time datetime="P12D">10 Days</time>
+            </span>
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-wrapper">
+              <div class="card-price">From 4000 Tk</div>
+
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+
+                <data value="2">(7)</data>
+              </div>
+            </div>
+
+            <h3 class="card-title">
+              <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+            </h3>
+
+            <address class="card-location">Cox's Bazar Sea Beach , Cox's Bazar</address>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="popular-card">
+
+          <figure class="card-banner">
+            <a href="#">
+              <img src="Imgs/place/sentmartin (1).png" width="740" height="518" loading="lazy"
+                alt="Kuala Lumpur, Malaysia" class="img-cover">
+            </a>
+
+            <span class="card-badge">
+              <ion-icon name="time-outline"></ion-icon>
+
+              <time datetime="P12D">2 Days</time>
+            </span>
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-wrapper">
+              <div class="card-price">From 10000 Tk</div>
+
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+
+                <data value="2">(5)</data>
+              </div>
+            </div>
+
+            <h3 class="card-title">
+              <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+            </h3>
+
+            <address class="card-location"> St. Martin’s Island,  St. Martin</address>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+      <!-- 
+        - #DESTINATION
+      -->
+<!--  <section class="section destination">
+        <div class="container">
+
+          <p class="section-subtitle">Destinations</p>
+
+          <h2 class="h2 section-title">Choose Your Place</h2>
+
+          <ul class="destination-list">
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="Imgs/place/chose1.png" width="1140" height="1100" loading="lazy"
+                    alt="Malé, Maldives" class="img-cover">
+                </figure>
+
+                
+
+              </a>
+            </li>
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="Imgs/place/chose2.png" width="1140" height="1100" loading="lazy"
+                    alt="Bangkok, Thailand" class="img-cover">
+                </figure>
+
+                
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner mychose">
+                  <img src="Imgs/place/chose3.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kuala Lumpur, Malaysia" class="img-cover">
+                </figure>
+
+                
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner mychose">
+                  <img src="Imgs/place/chose4.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kathmandu, Nepal" class="img-cover">
+                </figure>
+
+                
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner mychose">
+                  <img src="Imgs/place/chose5.jpg" width="1110" height="480" loading="lazy"
+                    alt="Jakarta, Indonesia" class="img-cover">
+                </figure>
+
+                
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+      <!-- popular Destinations -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <!-- title -->
+        <h2 class="section-title">Popular Destinations</h2>
+        <!-- cards -->
+
+        <div class="swiper swiper1">
+          <div class="destinations-cards swiper-wrapper">
+            <!-- card 1 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/place/chittagong.png"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Chittagong</h5>
+              <h6>Bangladesh</h6>
+            </div>
+            <!-- card 2 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/place/sylhet.png"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Jaflong</h5>
+              <h6>Sylhet</h6>
+            </div>
+            <!-- card 3 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/place/sentmartin.png"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>St. Martin’s Island</h5>
+              <h6>Chittagong</h6>
+            </div>
+            <!-- card 4 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/place/Bagerhat.png"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Shat Gombuj Mosque</h5>
+              <h6>Bagerhat</h6>
+            </div>
+            <!-- card 5 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/place/Rangamati and Kaptai Lake.png"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Rangamati and Kaptai Lake</h5>
+              <h6>Chittagong</h6>
+            </div>
+            <!-- card 6 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="Imgs/place/Srimangal.png"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Lawachara National Park</h5>
+              <h6>Srimangal</h6>
+            </div>
+            <!-- card 7 -->
+            <!-- card 8 -->
+          </div>
+        </div>
+      </div>
+    </section>
+         <!-- Hotels And Restaurants -->
+    <section class="hotel-restaurants" id="restaurants">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title"> Hotels And Restaurants</h2>
+          <div class="section-button hotel-button">view all <img src="/Imgs/icons/bleft.png" alt=""></div>
+        </div>
+        <!-- cards -->
+        <div class="hotel-card">
+          
+          <!-- card 1 -->
+          <div class="hotel-cards">
+            <img src="Imgs/place/hotel1.png" alt="" width="320" height="380">
+            <h5>name 1</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> place</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+          </div>
+          <!-- card 2 -->
+          <div class="hotel-cards">
+            <img src="Imgs/place/hotel2.png" alt="" width="320" height="380">
+            <h5>name</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> place</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+          </div>
+          <!-- card 3 -->
+          <div class="hotel-cards">
+            <img src="Imgs/place/hotel3.png" alt="" width="320" height="380">
+            <h5>name</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> place</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=2.png" alt=""></div>
+          </div>
+          <!-- card 4 -->
+          <div class="hotel-cards">
+            <img src="Imgs/place/hotel4.png" alt="" width="320" height="380">
+            <h5>name</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> place</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+          </div>
+          <!-- card 5 -->
+      <!--    <div class="hotel-cards off">
+            <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="" width="320" height="380">
+            <h5>Majestic Elegance</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Dominican Republic</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+          </div>
+          <!-- card 6 -->
+        <!--  <div class="hotel-cards off">
+            <img src="https://images.unsplash.com/photo-1586495985096-787fb4a54ac0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="" width="320" height="380">
+            <h5>Dreams Watervilla</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Meeru Island, Maldives</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+          </div>
+          <!-- card 7 -->
+        <!--  <div class="hotel-cards off">
+            <img src="https://images.unsplash.com/photo-1594741158704-5a784b8e59fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" width="320" height="380">
+            <h5> Waldorf Astoria </h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="">  Rome, Italy</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=3.png" alt=""></div>
+          </div>
+          <!-- card 8 -->
+        <!--  <div class="hotel-cards off">
+            <img src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" width="320" height="380">
+            <h5>Gilli Air</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Indonesia</h6>
+            <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+          </div>
+        -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours/Travel -->
+    <section id="tours">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title"> Travel Tips and Advice</h2>
+          <div class="section-button hotel-button">view all <img src="/Imgs/icons/bleft.png" alt=""></div>
+        </div>
+        <div class="tours-cards">
+
+          <div class="tours-card">
+            <div class="tour-img">
+              <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" width="320" height="380">
+            </div>
+            <div class="tours-card-content">
+              <div class="tours-card-contents-text">
+                <h3>East Village Ice Cream Crawl</h3>
+                <p>We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour tour. At each ice cream store we'll explore the story behind the business and see what makes the ice cream unique as you savor every…</p>
+              </div>
+              <div class="tours-card-content-icons">
+                <h6><img src="/Imgs/icons/calendersml.png" alt=""> Today</h6>
+                <h6><img src="/Imgs/icons/user.png" alt=""> Avenger Initiative</h6>
+                <h6><img src="/Imgs/icons/message.png" alt=""> 2</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="tours-card">
+            <div class="tour-img">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" width="320" height="380">
+            </div>
+            <div class="tours-card-content">
+              <div class="tours-card-contents-text">
+                <h3>Brooklyn Bridge cinematic photo walk</h3>
+                <p>This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m always open to capture clients at different locations upon request for an additional charge. </p>
+              </div>
+              <div class="tours-card-content-icons">
+                <h6><img src="/Imgs/icons/calendersml.png" alt=""> Today</h6>
+                <h6><img src="/Imgs/icons/user.png" alt=""> Ager Pagla</h6>
+                <h6><img src="/Imgs/icons/message.png" alt="">12</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about">
+        <div class="container">
+
+          <div class="about-content">
+
+            
+
+            <h2 class="h2 section-title">Explore all tour of the world with us.</h2>
+
+            <p class="about-text">
+              Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+              randomised words
+              which don't look even slightly believable.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="compass"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Tour guide</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="briefcase"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Friendly price</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="umbrella"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Reliable tour</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">Booking Now</a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog">
+        <div class="container">
+
+          <p class="section-subtitle">From The Blog Post</p>
+
+          <h2 class="h2 section-title">Latest News & Articles</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="Imgs/place/Bandarban (1).png" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="Imgs/place/Kuakata (1).png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="Imgs/place/Kuakata (1).png" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="Imgs/place/Kuakata (1).png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="Imgs/place/sentmartin (1).png" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="Imgs/place/Bandarban (1).png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <section id="About">
+        <div class="about-content">
+          <h2>About US</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          </p>
+  
+           <div class="section-button hotel-button">Read More <img src="/Imgs/icons/bleft.png" alt=""></div>
+        </div>
+  
+        <div class="about-img">
+          <img src="/Imgs/about img.png" alt="" width="556" height="488">
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Top destination</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Indonesia, Jakarta</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Maldives, Malé</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Australia, Canberra</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Thailand, Bangkok</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Morocco, Rabat</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Categories</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Travel</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lifestyle</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fashion</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Education</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Food & Drink</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Booking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Get a newsletter</p>
+
+          <p class="newsletter-text">
+            For the latest deals and tips, travel no further than your inbox
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <a href="#" class="logo">Tourest</a>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#" class="copyright-link"> TOURMATE </a>. All Rights Reserved
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script2.js"></script>
+  <script src="js/script.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

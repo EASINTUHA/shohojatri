@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<Select id="upzilla" onchange="enabledistrict(this)" class="d-none8">
+    <option value="">please Select</option>
+    <option value="1"> Cumilla Sadar South</option>
+    <option value="2"> Comilla Adarsa Sadar</option>
+    <option value="3"> Barura</option>
+    <option value="4"> Chandina</option>
+    <option value="5"> Chauddagram</option>
+    <option value="6"> Daudkandi</option>
+    <option value="7"> Brahmanpara</option>
+    <option value="8"> Homna</option>
+    <option value="9"> Monohorgonj</option>
+    <option value="10"> Laksam</option>
+    <option value="11"> Debidwar</option>
+    <option value="12"> Meghna</option>
+    <option value="13"> Muradnagar</option>
+    <option value="14"> Nangalkot</option>
+    <option value="15"> Burichong</option>
+    <option value="16"> Titas</option>
+</Select>
+<body>
+    <h1 class="select-Location">Select Location</h1>
+    <section></section>
+    <Select id="locationdown" onchange="enableLocation(this)">
+        <option value="">please Select</option>
+        <option value="1"> Chittagong</option>
+        <option value="2"> Dhaka</option>
+        <option value="3"> Khulna</option>
+        <option value="4"> Rajshahi</option>
+        <option value="5"> Sylhet</option>
+        <option value="6"> Rangpur</option>
+        <option value="7"> Mymensingh</option>
+        <option value="8"> Barishal</option>
+    </Select>
+    <!--Chittagong-->
+    <Select id="district" onchange="enabledistrict(this)" class="d-none">
+        <option value="">please Select</option>
+        <option value="101"> Bandarban</option>
+        <option value="102"> Brahmanbaria</option>
+        <option value="103"> Chittagong</option>
+        <option value="104"> Cumilla</option>
+        <option value="105"> Cox’s Bazar</option>
+        <option value="106"> Feni</option>
+        <option value="107"> Khagrachhari</option>
+        <option value="108"> Lakshmipur</option>
+        <option value="109"> Noakhali</option>
+        <option value="110">Rangamati</option>
+        <option value="111">Chandpur</option>
+    </Select>
+    <!--Dhaka-->
+    <Select id="district1" onchange="enabledistrict(this)" class="d-none1">
+        <option value="">please Select</option>
+        <option value="1">Dhaka</option>
+        <option value="2">Faridpur</option>
+        <option value="3">Gazipur</option>
+        <option value="4"> Gopalganj</option>
+        <option value="5"> Jamalpur</option>
+        <option value="6"> Kishoreganj</option>
+        <option value="7"> Madaripur</option>
+        <option value="8"> Manikganj</option>
+        <option value="9"> Munshiganj</option>
+        <option value="10"> Narayanganj</option>
+        <option value="11"> Narsingdi</option>
+        <option value="12">  Netrakona</option>
+        <option value="13">  Mymensingh</option>
+    </Select>
+    <!--Khulna-->
+    <Select id="district2" onchange="enabledistrict(this)" class="d-none2">
+        <option value="">please Select</option>
+        <option value="1">Bagerhat</option>
+        <option value="2">Chuadanga</option>
+        <option value="3"> Jessore</option>
+        <option value="4"> Jhenaidah</option>
+        <option value="5"> Khulna</option>
+        <option value="6"> Kushtia</option>
+        <option value="7"> Magura</option>
+        <option value="8"> Meherpur</option>
+        <option value="9"> Narail</option>
+        <option value="10"> Satkhira</option>
+    </Select>
+    <!--Rajshahi-->
+    <Select id="district3" onchange="enabledistrict(this)" class="d-none3">
+        <option value="">please Select</option>
+        <option value="1">Bogra</option>
+        <option value="2">Chapinawabganj</option>
+        <option value="3"> Chapinawabganj</option>
+        <option value="4"> Naogaon</option>
+        <option value="5"> Pabna</option>
+        <option value="6"> Rajshahi</option>
+        <option value="7"> Sirajganj</option>
+    </Select>
+    <!--Sylhet-->
+    <Select id="district4" onchange="enabledistrict(this)" class="d-none4">
+        <option value="">please Select</option>
+        <option value="1">Habiganj</option>
+        <option value="2">Moulvibazar</option>
+        <option value="3"> Sunamganj</option>
+        <option value="4"> Sylhet</option>
+    </Select>
+    <!--Rangpur-->
+    <Select id="district5" onchange="enabledistrict(this)" class="d-none5">
+        <option value="">please Select</option>
+        <option value="1">Dinajpur</option>
+        <option value="2">Kurigram</option>
+        <option value="3"> Gaibandha</option>
+        <option value="4"> Lalmonirhat</option>
+        <option value="5"> Nilphamari</option>
+        <option value="6">Panchagarh</option>
+        <option value="7"> Rangpur</option>
+        <option value="8"> Thakurgaon</option>
+    </Select>
+    <!--Mymensingh-->
+    <Select id="district6" onchange="enabledistrict(this)" class="d-none6">
+        <option value="">please Select</option>
+        <option value="1">Mymensingh</option>
+        <option value="2">Jamalpur</option>
+        <option value="3"> Netrokona</option>
+        <option value="4"> Sherpur</option>
+    </Select>
+    <!--Barishal-->
+    <Select id="district7" onchange="enabledistrict(this)" class="d-none7">
+        <option value="">please Select</option>
+        <option value="1">Barisal</option>
+        <option value="2">Barguna</option>
+        <option value="3"> Bhola</option>
+        <option value="4"> Jhalokati</option>
+        <option value="5"> Patuakhali</option>
+        <option value="6"> Pirojpur</option>
+
+    </Select>
+    <Select id="upzilla" onchange="enabledistrict(this)" class="d-none8">
+        <option value="">please Select</option>
+        <option value="1"> Cumilla Sadar South</option>
+        <option value="2"> Comilla Adarsa Sadar</option>
+        <option value="3"> Barura</option>
+        <option value="4"> Chandina</option>
+        <option value="5"> Chauddagram</option>
+        <option value="6"> Daudkandi</option>
+        <option value="7"> Brahmanpara</option>
+        <option value="8"> Homna</option>
+        <option value="9"> Monohorgonj</option>
+        <option value="10"> Laksam</option>
+        <option value="11"> Debidwar</option>
+        <option value="12"> Meghna</option>
+        <option value="13"> Muradnagar</option>
+        <option value="14"> Nangalkot</option>
+        <option value="15"> Burichong</option>
+        <option value="16"> Titas</option>
+    </Select>
+</section>
+    <script>
+        function enableLocation(answer){
+            if(answer.value=="1"){
+                document.getElementById('district').classList.remove('d-none');
+                document.getElementById('district1').classList.add('d-none1');
+                document.getElementById('district2').classList.add('d-none2');
+                document.getElementById('district3').classList.add('d-none3');
+                document.getElementById('district4').classList.add('d-none4');
+                document.getElementById('district5').classList.add('d-none5');
+                document.getElementById('district6').classList.add('d-none6');
+                document.getElementById('district7').classList.add('d-none7');
+                document.getElementById('upzilla').classList.add('d-none8');
+                console.log(answer.value)
+            }
+            if(answer.value=="2"){
+                document.getElementById('upzilla').classList.add('d-none8');
+                document.getElementById('district1').classList.remove('d-none1');
+                document.getElementById('district').classList.add('d-none');
+                document.getElementById('district2').classList.add('d-none2');
+                document.getElementById('district3').classList.add('d-none3');
+                document.getElementById('district4').classList.add('d-none4');
+                document.getElementById('district5').classList.add('d-none5');
+                document.getElementById('district6').classList.add('d-none6');
+                document.getElementById('district7').classList.add('d-none7');
+                console.log(answer.value)
+            }
+            if(answer.value=="3"){
+                document.getElementById('district2').classList.remove('d-none2');
+                document.getElementById('district').classList.add('d-none');
+                document.getElementById('district1').classList.add('d-none1');
+                document.getElementById('district3').classList.add('d-none3');
+                document.getElementById('district4').classList.add('d-none4');
+                document.getElementById('district5').classList.add('d-none5');
+                document.getElementById('district6').classList.add('d-none6');
+                document.getElementById('district7').classList.add('d-none7');
+                document.getElementById('upzilla').classList.add('d-none8');
+                console.log(answer.value)
+            }
+            if(answer.value=="4"){
+                document.getElementById('district3').classList.remove('d-none3');
+                document.getElementById('district').classList.add('d-none');
+                document.getElementById('district1').classList.add('d-none1');
+                document.getElementById('district2').classList.add('d-none2');
+                document.getElementById('district4').classList.add('d-none4');
+                document.getElementById('district5').classList.add('d-none5');
+                document.getElementById('district6').classList.add('d-none6');
+                document.getElementById('district7').classList.add('d-none7');
+                document.getElementById('upzilla').classList.add('d-none8');
+                console.log(answer.value)
+            }
+            if(answer.value=="5"){
+                document.getElementById('district4').classList.remove('d-none4');
+                document.getElementById('district').classList.add('d-none');
+                document.getElementById('district1').classList.add('d-none1');
+                document.getElementById('district2').classList.add('d-none2');
+                document.getElementById('district3').classList.add('d-none3');
+                document.getElementById('district5').classList.add('d-none5');
+                document.getElementById('district6').classList.add('d-none6');
+                document.getElementById('district7').classList.add('d-none7');
+                document.getElementById('upzilla').classList.add('d-none8');
+                console.log(answer.value)
+            }
+            if(answer.value=="6"){
+                document.getElementById('district5').classList.remove('d-none5');
+                document.getElementById('district').classList.add('d-none');
+                document.getElementById('district1').classList.add('d-none1');
+                document.getElementById('district2').classList.add('d-none2');
+                document.getElementById('district3').classList.add('d-none3');
+                document.getElementById('district4').classList.add('d-none4');
+                document.getElementById('district6').classList.add('d-none6');
+                document.getElementById('district7').classList.add('d-none7');
+                document.getElementById('upzilla').classList.add('d-none8');
+                console.log(answer.value)
+            }
+            if(answer.value=="7"){
+                document.getElementById('district6').classList.remove('d-none6');
+                document.getElementById('district').classList.add('d-none');
+                document.getElementById('district1').classList.add('d-none1');
+                document.getElementById('district2').classList.add('d-none2');
+                document.getElementById('district3').classList.add('d-none3');
+                document.getElementById('district4').classList.add('d-none4');
+                document.getElementById('district5').classList.add('d-none5');
+                document.getElementById('district7').classList.add('d-none7');
+                document.getElementById('upzilla').classList.add('d-none8');
+                console.log(answer.value)
+            }
+            if(answer.value=="8"){
+                document.getElementById('district7').classList.remove('d-none7');
+                document.getElementById('district').classList.add('d-none');
+                document.getElementById('district1').classList.add('d-none1');
+                document.getElementById('district2').classList.add('d-none2');
+                document.getElementById('district3').classList.add('d-none3');
+                document.getElementById('district4').classList.add('d-none4');
+                document.getElementById('district5').classList.add('d-none5');
+                document.getElementById('district6').classList.add('d-none6');
+                document.getElementById('upzilla').classList.add('d-none8');
+                console.log(answer.value)
+            }
+        };
+        function enabledistrict(answer){
+            if(answer.value=="101"){
+                document.getElementById('upzilla').classList.remove('d-none8');
+                document.getElementById('district1').classList.add('d-none1');
+                document.getElementById('district2').classList.add('d-none2');
+                document.getElementById('district3').classList.add('d-none3');
+                document.getElementById('district4').classList.add('d-none4');
+                document.getElementById('district5').classList.add('d-none5');
+                document.getElementById('district6').classList.add('d-none6');
+                document.getElementById('district7').classList.add('d-none7');
+                console.log(answer.value)
+            }
+        };
+    </script>
+</body>
+</html>
